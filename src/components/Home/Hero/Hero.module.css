@@ -1,10 +1,11 @@
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px); /* Adjust based on navbar height */
   display: grid;
-  grid-template-rows: 70% 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 60% 1fr;
+  gap: 20px;
   position: relative;
-  /* scroll-snap-align: start; */
+  padding-top: 90px; /* Space for fixed navbar */
 }
 
 .vision_div {
@@ -27,17 +28,56 @@
 }
 
 .hero_left {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 3 / 2;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.hero_left div {
+.main_image {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 60%;
-  margin-top: 25%;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.main_image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center; /* Center the thumbnails horizontally */
+  align-items: center; /* Center the thumbnails vertically */
+  gap: 30px; /* Adjust spacing between thumbnails */
+  width: 100%;
+}
+
+.thumbnails div {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnails div:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnails div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnails div:hover img {
+  opacity: 0.8;
 }
 
 .hero_right {
@@ -45,21 +85,83 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: center;
+  padding: 0 20px; /* Add padding for better alignment */
+  animation: fadeInUp 1s ease-out; /* Add animation */
 }
 
 .hero_right h1 {
-  color: #676767;
+  color: #007bff; /* Base color */
   font-size: 34px;
-  font-weight: 300;
-  padding-right: 25px;
+  font-weight: bold; /* Makes the text bold */
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out, colorChange 3s infinite; /* Adds both fadeIn and colorChange animations */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #007bff; /* Starting color */
+  }
+  50% {
+    color: #ff5733; /* Middle color */
+  }
+  100% {
+    color: #007bff; /* Ending color */
+  }
+}
+
+.hero_right h1 small {
+  display: block;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px; /* Add spacing between lines */
+  animation: fadeIn 1s ease-out;
+}
+
+.hero_right p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px; /* Set max width for better text alignment */
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero_bottom {
-  grid-area: 2 / 1 / 3 / 3;
+  grid-area: 3 / 1 / 4 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .line {
