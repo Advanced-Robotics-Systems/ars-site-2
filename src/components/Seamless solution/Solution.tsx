@@ -1,6 +1,8 @@
 "use client";
 import styles from "./Solutions.module.css";
 import Image from "next/image";
+import ars from "@/public/ars.png";
+
 
 
 
@@ -26,7 +28,7 @@ export default function Solution(){
            </div>
            </div>
            <div className={styles.ars_bg}>
-            <Image src="/assets/ars.jpg" alt="ars" width={400} height={400}/>
+            <Image src="/assets/ars.png" alt="ars" width={400} height={400}/>
            </div>
            </div>
 

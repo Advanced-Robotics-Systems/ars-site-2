@@ -5,7 +5,7 @@
   align-items: flex-start;
   background-color: #00a0db;
   color: white;
-  height: 100vh;
+  height: 135vh;
   padding: 20px;
 }
 
@@ -14,11 +14,11 @@
   font-size: 2.5em;
   font-weight: bold;
   left: 98px;
-  margin-bottom: 20px;
+
+  margin-top: 210px; /* reset margin */
 
   text-align: left;
   padding-right: 100px;
-  margin-top: 150px; /* reset margin */
 }
 
 .list ul {
@@ -32,7 +32,8 @@
 .list ul li {
   left: 76px;
   font-size: 1.8em;
-  margin-bottom: 10px;
+
+  margin-bottom: 13px;
   position: relative;
   padding-left: 30px;
   color: black;
@@ -53,11 +54,12 @@
   top: 30px;
   left: 76px;
   padding: 10px 20px;
-  background-color: white;
+  background-color: transparent;
   color: black;
   border: 10;
   border-radius: 15px;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -69,12 +71,12 @@
 .ars_bg img {
   /* target the img element inside the .ars_bg container */
 
-  width: 100%; /* make the image take up the full width of the container */
+  width: 135%; /* make the image take up the full width of the container */
   height: auto; /* maintain the image's aspect ratio */
   object-fit: cover; /* make the image cover the entire container */
   position: relative;
-  padding-left: 700px;
+  padding-left: 400px;
   opacity: 0.25;
-  top: -350px; /* move the image up by 50 pixels */
+  top: -420px; /* move the image up by 50 pixels */
   right: -400px; /* move the image right by 100 pixels */
 }
