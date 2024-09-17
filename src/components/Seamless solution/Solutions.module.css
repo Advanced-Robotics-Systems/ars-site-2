@@ -1,0 +1,85 @@
+.solutions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #00a0db;
+  color: white;
+  height: 155vh;
+  padding: 20px;
+}
+
+.paragraph p {
+  position: absolute;
+  font-size: 2.5em;
+  font-weight: bold;
+  left: 98px;
+
+  margin-top: 350px; /* reset margin */
+
+  text-align: left;
+  padding-right: 100px;
+}
+
+.list ul {
+  list-style: none;
+
+  padding: 0;
+  padding-top: 400px;
+  margin-right: 1100px;
+  margin-top: 170px;
+}
+
+.list ul li {
+  left: 76px;
+  font-size: 1.8em;
+
+  margin-bottom: 13px;
+
+  position: relative;
+  padding-left: 30px;
+  color: black;
+}
+
+.list ul li::before {
+  content: "✔";
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+}
+
+.button button {
+  position: relative;
+  margin-top: 20px;
+  top: 30px;
+  left: 76px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border: 10;
+  border-radius: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #ccc;
+}
+
+.ars_bg img {
+  /* target the img element inside the .ars_bg container */
+
+  width: 135%; /* make the image take up the full width of the container */
+  height: auto; /* maintain the image's aspect ratio */
+  object-fit: cover; /* make the image cover the entire container */
+  position: relative;
+  padding-left: 400px;
+  opacity: 0.25;
+  top: -500px; /* move the image up by 50 pixels */
+  right: -400px; /* move the image right by 100 pixels */
+  filter: contrast(200%);
+}

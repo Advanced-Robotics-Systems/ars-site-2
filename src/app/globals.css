@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 :root {
   --ars-primary-color: #4f5b66;
   --ars-secondary-color: #21aae2;
