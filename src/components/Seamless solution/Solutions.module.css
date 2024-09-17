@@ -5,7 +5,7 @@
   align-items: flex-start;
   background-color: #00a0db;
   color: white;
-  height: 135vh;
+  height: 155vh;
   padding: 20px;
 }
 
@@ -15,7 +15,7 @@
   font-weight: bold;
   left: 98px;
 
-  margin-top: 210px; /* reset margin */
+  margin-top: 350px; /* reset margin */
 
   text-align: left;
   padding-right: 100px;
@@ -27,6 +27,7 @@
   padding: 0;
   padding-top: 400px;
   margin-right: 1100px;
+  margin-top: 170px;
 }
 
 .list ul li {
@@ -34,6 +35,7 @@
   font-size: 1.8em;
 
   margin-bottom: 13px;
+
   position: relative;
   padding-left: 30px;
   color: black;
@@ -77,6 +79,7 @@
   position: relative;
   padding-left: 400px;
   opacity: 0.25;
-  top: -420px; /* move the image up by 50 pixels */
+  top: -500px; /* move the image up by 50 pixels */
   right: -400px; /* move the image right by 100 pixels */
+  filter: contrast(200%);
 }

@@ -1,7 +1,7 @@
 "use client";
 import styles from "./Solutions.module.css";
 import Image from "next/image";
-import ars from "@/public/ars.png";
+
 
 
 
